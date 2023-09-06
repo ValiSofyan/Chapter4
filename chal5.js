@@ -95,7 +95,7 @@ else {
 }
 } 
 
-console.log(hitungBiayaParkir(2, "sabtu", false),"=== gooo");
+console.log(hitungBiayaParkir(2, "sabtu", false));
 // Output: Biaya Parkir: Rp15000.
 console.log(hitungBiayaParkir(6, "Minggu", true));
 // Output: Biaya Parkir: Rp25000.
@@ -139,27 +139,25 @@ function jadwalFestival(hari, cuaca, suhu, angin) {
     
     if (hari !== ""&& cuaca !=="")  {
          acara += "pameran seni"
-        //  console.log(DaftarAcara);
+       
      }
     if (angin > 20 && hari === "hujan") {
         ruangan ="indoor" 
-        // console.log(ruangan);
+       
     }
     if (cuaca ==="hujan" && angin < 20 ) {
             ruangan = "indoor"
-            // console.log(ruangan,"+++++1");
+           
         }
     if (suhu < 5) {
             ruangan = "indoor"
-            // console.log(ruangan,'====asdf');
+           
         }
     if (cuaca === "cerah" && suhu >25) {
             acara += " pesta eskrim"  
-            // console.log(acara); 
         }
     if (hari === "minggu" && cuaca === "cerah") {
             acara += " Acara marathon senja"
-            // console.log(DaftarAcara);
             
          }
 
